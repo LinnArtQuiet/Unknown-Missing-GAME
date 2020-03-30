@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="h11e1q6h">
+  <resources>
+    <component id="v6vyb" name="Background.xml" path="/"/>
+    <component id="v6vy9" name="SubtitleScene.xml" path="/" exported="true"/>
+    <component id="v6vya" name="Label.xml" path="/"/>
+  </resources>
+  <publish name="" path="E:\workspace\Unity\UnknownMissingGame\Assets\Resources\SubtitlePackage" packageCount="2"/>
+</packageDescription>

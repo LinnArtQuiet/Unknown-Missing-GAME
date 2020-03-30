@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="hetgpycu">
+  <resources>
+    <component id="g1og0" name="MainScene.xml" path="/" exported="true"/>
+    <image id="v6vy4" name="beginning background.png" path="/"/>
+    <image id="v6vy2" name="button-start-down.png" path="/"/>
+    <image id="v6vy3" name="button-start-up.png" path="/"/>
+    <image id="v6vy5" name="logo in beginning.png" path="/"/>
+    <component id="g1og1" name="StartButton.xml" path="/"/>
+  </resources>
+  <publish name="" path="E:\workspace\Unity\UnknownMissingGame\Assets\Resources\MainPackage" packageCount="2"/>
+</packageDescription>

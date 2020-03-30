@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <component id="n3_v6vy" name="Background" src="v6vyb" fileName="Background.xml" xy="0,0"/>
+    <component id="n2_v6vy" name="Label" src="v6vya" fileName="Label.xml" xy="200,100">
+      <Label title="test" titleColor="#ffffff"/>
+    </component>
+  </displayList>
+</component>

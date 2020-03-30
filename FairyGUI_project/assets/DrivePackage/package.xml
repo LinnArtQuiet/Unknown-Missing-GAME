@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="8ofv37w2">
+  <resources>
+    <component id="en0o0" name="DriveScene.xml" path="/" exported="true"/>
+    <image id="en0o1" name="无人驾驶CG.png" path="/"/>
+    <image id="en0o2" name="无人驾驶对话框.png" path="/"/>
+    <component id="en0o3" name="Dialog.xml" path="/"/>
+    <component id="en0o4" name="CommonButton.xml" path="/"/>
+    <image id="en0o5" name="点击button(大).png" path="/"/>
+    <image id="en0o6" name="点击button（小）.png" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="3ziph71m">
+  <resources>
+    <component id="91fr0" name="TestScene.xml" path="/"/>
+    <image id="91fr1" name="场景1-墙纸.png" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

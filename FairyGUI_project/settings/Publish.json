@@ -1,0 +1,19 @@
+{
+	"atlasSetting":{
+		"paging":true,
+		"sizeOption":"pot"
+	},
+	"binaryFormat":true,
+	"codeGeneration":{
+		"classNamePrefix":"UI_",
+		"codePath":null,
+		"codeType":"",
+		"getMemberByName":false,
+		"ignoreNoname":false,
+		"memberNamePrefix":"m_",
+		"packageName":null
+	},
+	"compressDesc":true,
+	"packageCount":2,
+	"path":"E:\\workspace\\Unity\\UnknownMissingGame\\Assets\\Resources\\UI\\Activity"
+}

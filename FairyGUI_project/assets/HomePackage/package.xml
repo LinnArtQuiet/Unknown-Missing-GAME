@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="hsptubuo">
+  <resources>
+    <image id="g1ogh" name="场景1-博古架.png" path="/"/>
+    <image id="g1ogf" name="场景1-吊灯.png" path="/"/>
+    <image id="g1oge" name="场景1-钢琴.png" path="/"/>
+    <image id="g1ogd" name="场景1-古风桌子.png" path="/"/>
+    <image id="g1ogn" name="场景1-古琴.png" path="/"/>
+    <image id="g1ogl" name="场景1-落地钟.png" path="/"/>
+    <image id="g1ogr" name="场景1-墙纸.png" path="/"/>
+    <image id="g1ogj" name="场景1-全息投影.png" path="/"/>
+    <component id="g1ogs" name="Mask.xml" path="/"/>
+    <component id="g1ogq" name="NextButton.xml" path="/"/>
+    <image id="g1og0" name="点击button(大).png" path="/"/>
+    <image id="g1og1" name="点击button（小）.png" path="/"/>
+    <component id="g1og2" name="CommonButton.xml" path="/"/>
+    <image id="g1og3" name="无人驾驶系统_进入button.png" path="/"/>
+    <image id="g1og4" name="线索收集系统_进入Button.png" path="/"/>
+    <component id="g1og5" name="DriveButton.xml" path="/"/>
+    <component id="g1og6" name="CollectButton.xml" path="/"/>
+    <image id="rw0pt" name="comp.png" path="/"/>
+    <image id="rw0pv" name="角色1-comp.png" path="/"/>
+    <component id="91frw" name="Wallpaper.xml" path="/"/>
+    <component id="imxqx" name="Mail.xml" path="/"/>
+    <image id="imxqy" name="系统关闭button.png" path="/"/>
+    <component id="imxqz" name="CloseButton.xml" path="/"/>
+    <component id="imxq10" name="OKButton.xml" path="/"/>
+    <image id="imxq11" name="邮件附件图标.png" path="/"/>
+    <component id="leke13" name="Dialog.xml" path="/"/>
+    <component id="pra214" name="PersonalData.xml" path="/"/>
+    <component id="en0o16" name="MailReadButton.xml" path="/"/>
+    <image id="en0o17" name="角色1-comp_4.png" path="/"/>
+    <component id="en0o19" name="HomeScene.xml" path="/" exported="true"/>
+    <component id="en0o1c" name="Avatar.xml" path="/"/>
+    <component id="en0o1d" name="Guild_Dialog.xml" path="/"/>
+    <component id="en0o1e" name="Clue.xml" path="/"/>
+    <component id="en0o1f" name="ClueLabel.xml" path="/"/>
+  </resources>
+  <publish name="HomePackage" path="E:\workspace\Unity\UnknownMissingGame\Assets\Resources\HomePackage" packageCount="2"/>
+</packageDescription>

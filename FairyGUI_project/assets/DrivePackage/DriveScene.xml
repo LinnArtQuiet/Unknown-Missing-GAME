@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <image id="n0_en0o" name="n0" src="en0o1" fileName="无人驾驶CG.png" xy="0,0" size="800,600"/>
+    <image id="n1_en0o" name="n1" src="en0o2" fileName="无人驾驶对话框.png" xy="0,500" size="800,100"/>
+    <component id="n2_en0o" name="n2" src="en0o3" fileName="Dialog.xml" xy="0,500" size="500,100"/>
+    <component id="n3_en0o" name="n3" src="en0o4" fileName="CommonButton.xml" xy="578,536" size="150,32">
+      <Button title="乌镇中医私人诊所"/>
+    </component>
+  </displayList>
+</component>
