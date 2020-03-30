@@ -23,7 +23,7 @@ public partial class HomeScene : MonoBehaviour{
         else if(m_i == 11){
             m_personalData.visible = true;
         }
-        else if((m_i >= 12) && (m_i < 13))
+        else if((m_i>=12) && (m_i<13))
         {
             ControlDialogue();
         }
@@ -75,9 +75,9 @@ public partial class HomeScene : MonoBehaviour{
     }
     void button_1_Click() // 选择1 ： Lee是谁？
     {
-        m_mask_0.visible = false; // 隐藏遮罩
-        m_i = 7; // 从strs[7]开始读了
-        isActive = true; // 直接开启字幕，就是从strs[6]开始了
+        m_mask_0.visible = false;
+        m_i = 7; // "Comp，Lee是谁，为何会给我发邮件？邮件内容是什么？"
+        isActive = true;
     }
     void button_2_Click() // 选择2 ：邮件内容是什么？
     {
@@ -93,11 +93,15 @@ public partial class HomeScene : MonoBehaviour{
 
     }
     void button_1_1_1_Click(){
-        m_mail.visible = true; // TODO:后面接2的剧情
+        m_mail.visible = true;
+        m_i = 15; // 后面接2的剧情
+        isActive = true;
     }
     void button_1_1_2_Click()
     {
-        m_mail.visible = true; // TODO:后面接2的剧情
+        m_mail.visible = true;
+        m_i = 15; // 后面接2的剧情
+        isActive = true;
     }
     void button_1_1_3_Click()
     {
@@ -124,10 +128,14 @@ public partial class HomeScene : MonoBehaviour{
         m_mask_2_1_1_1.visible = false;
         //TODO:
     }
-    void button_2_1_1_1_1_Click(){
-        //TODO:跳转到第二章
+    void button_2_1_1_1_1_Click(){ // CURE的使用记录
+        m_mask_2_1_1_1.visible = false;
+        m_i = 28;
+        isActive = true;
+        // SceneManager.LoadScene("GrandpaScene"); // 跳转到第二章
     }
-    void button_2_1_1_1_2_Click(){
+    void button_2_1_1_1_2_Click(){ // CURE的GPS数据
+        m_mask_2_1_1_1.visible = false;
         //TODO:跳转到第三章
     }
 }
