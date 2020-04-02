@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,50" extention="Button" bgColorEnabled="true" bgColor="#999999">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <graph id="n0_imxq" name="n0" xy="0,0" size="100,50" touchable="false" type="rect" lineSize="0" lineColor="#ff666666" fillColor="#ff666666">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n1_imxq" name="n1" xy="0,0" size="100,50" touchable="false" type="rect" lineSize="0" lineColor="#ff666666" fillColor="#ff666666">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n2_imxq" name="n2" xy="0,0" size="100,50" touchable="false" type="rect" lineSize="0" lineColor="#ff666666" fillColor="#ffcccccc">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n3_imxq" name="title" xy="0,0" size="100,50" fontSize="12" color="#ffffff" align="center" vAlign="middle" autoSize="none" singleLine="true" text="OK">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

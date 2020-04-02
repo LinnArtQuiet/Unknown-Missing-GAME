@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="32,27" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_imxq" name="n0" src="imxqy" fileName="系统关闭button.png" xy="-4,-4" size="40,35">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_imxq" name="n1" src="imxqy" fileName="系统关闭button.png" xy="-4,-4" size="40,35">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

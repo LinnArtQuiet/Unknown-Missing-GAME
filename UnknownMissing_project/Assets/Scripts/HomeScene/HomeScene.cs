@@ -11,9 +11,9 @@ public partial class HomeScene : MonoBehaviour
     int currentPos = 0; // 打字的位置
     void Start() // 主要用来完成初始化和控件获得
     {
-        initUI();
+        initUI(); // 在HomeScene_UI.cs文件中
         isActive = true; // 开始动画
-        Debug.Log("start!");
+        Debug.Log("start! 第一章开始！");
     }
     void Update()
     {
@@ -24,11 +24,13 @@ public partial class HomeScene : MonoBehaviour
             {
                 timer = 0;
                 currentPos++;
-                if(Guild.visible == true){ // 因为Guild也需要播放
+                if(Guild.visible == true)
+                { // 因为Guild也需要播放
                     m_guild_dialog.text = "";
                     m_guild_dialog.text = strs[m_i].Substring(0, currentPos);
                 }
-                else{
+                else
+                {
                     m_dialog.text = "";
                     m_dialog.text = strs[m_i].Substring(0, currentPos);//刷新文本显示内容
                 }
@@ -39,7 +41,7 @@ public partial class HomeScene : MonoBehaviour
             }
         }
     }
-    void ControlDialogue(){
+    void ControlDialogue(){ // 用来控制台词的步进
         if (isActive)
         {
             OnFinish();

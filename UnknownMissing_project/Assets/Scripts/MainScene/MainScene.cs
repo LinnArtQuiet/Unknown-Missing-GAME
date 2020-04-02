@@ -6,8 +6,6 @@ using FairyGUI;
 // 最开始的初始界面
 public class MainScene : MonoBehaviour
 {
-    
-    
     void Start()
     {
         UIPanel panel = gameObject.GetComponent<UIPanel>();

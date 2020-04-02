@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,300" bgColorEnabled="true" bgColor="#333333">
+  <displayList>
+    <graph id="n1_pra2" name="n1" xy="0,0" size="400,300" type="rect" fillColor="#ff333333"/>
+    <text id="n0_pra2" name="n0" xy="168,108" size="144,69" fontSize="12" color="#ffffff" autoSize="none" text="个人信息页"/>
+  </displayList>
+</component>

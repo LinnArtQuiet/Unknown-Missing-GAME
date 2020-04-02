@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="180,180" extention="Label">
+  <displayList>
+    <graph id="n1_en0o" name="n1" xy="0,0" size="180,180" type="rect" fillColor="#ff000000"/>
+    <text id="n0_en0o" name="title" xy="0,0" size="180,180" fontSize="12" color="#ffffff" align="center" vAlign="middle" autoSize="none" singleLine="true" text="Guild Dialog">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>

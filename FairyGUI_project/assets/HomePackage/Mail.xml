@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,300" bgColorEnabled="true" bgColor="#333333">
+  <displayList>
+    <graph id="n9_m35x" name="n9" xy="0,0" size="400,300" type="rect" fillColor="#ff333333"/>
+    <graph id="n1_imxq" name="n1" xy="18,74" size="368,165" type="rect" lineColor="#ff666666" fillColor="#ff666666"/>
+    <text id="n2_imxq" name="n2" xy="22,46" size="74,22" fontSize="12" color="#ffffff" autoSize="none" text="发件人：Lee"/>
+    <text id="n3_imxq" name="n3" xy="239,46" size="141,19" fontSize="12" color="#ffffff" autoSize="none" text="2050.10.17 08:25:45"/>
+    <richtext id="n5_imxq" name="n5" xy="39,91" size="326,78" fontSize="12" color="#ffffff" autoSize="none" text="昨天发现。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。"/>
+    <graph id="n6_imxq" name="n6" xy="35,175" size="336,1" type="rect" lineColor="#ffffffff"/>
+    <image id="n7_imxq" name="n7" src="imxq11" fileName="邮件附件图标.png" xy="45,189" size="43,39"/>
+    <image id="n8_imxq" name="n8" src="imxq11" fileName="邮件附件图标.png" xy="102,190" size="43,39"/>
+  </displayList>
+</component>

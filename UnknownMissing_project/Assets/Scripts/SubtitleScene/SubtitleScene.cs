@@ -8,7 +8,7 @@ public class SubtitleScene : MonoBehaviour
 {
     string secondStr = "人工智能与人类生活的结合日趋紧密，无人驾驶系统早已步入成熟期，可穿戴模式渗透生活琐事，人类的衣食住行，医教文娱早已迈入机械化、智能化阶段。医疗的人工智能助理盛极一时，越来越多的人，将个人健康交由AI管理。";
     bool isFirstStr = true; // 一共就两个字符串
-    bool isActive = true; // 是否正在打字
+    bool isActive = false; // 是否正在打字
     float charsPerSecond = 0.2f;//打字时间间隔
     float timer;//计时器
     int currentPos = 0;//当前打字位置
@@ -24,6 +24,7 @@ public class SubtitleScene : MonoBehaviour
         GButton background = view.GetChild("Background").asButton;
         m_label.onClick.Add(OnClick);
         background.onClick.Add(OnClick); // 之所以添加两个是因为没有点击穿透效果
+        isActive = true;
     }
     void OnClick()
     {
@@ -38,7 +39,7 @@ public class SubtitleScene : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("HomeScene");// 更换场景
+            SceneManager.LoadScene("HomeScene"); // 更换场景
         }
     }
     void Update()

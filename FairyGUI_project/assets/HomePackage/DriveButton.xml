@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,150" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_g1og" name="n0" src="g1og3" fileName="无人驾驶系统_进入button.png" xy="0,0" size="400,150">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="588,120" extention="Label" bgColor="#000000">
+  <displayList>
+    <graph id="n1_pra2" name="n1" xy="0,0" size="588,120" type="rect" fillColor="#ff000000"/>
+    <text id="n0_leke" name="title" xy="0,0" size="588,120" fontSize="16" color="#ffffff" vAlign="middle" autoSize="none" singleLine="true" text="test">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>

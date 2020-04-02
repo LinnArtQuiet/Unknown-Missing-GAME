@@ -1,0 +1,42 @@
+{
+	"objectStatus": {
+		"n14_leke": {
+			"locked": true
+		},
+		"n31_leke": {
+			"hidden": true,
+			"collapsed": true
+		},
+		"n27_leke": {
+			"hidden": true,
+			"collapsed": true
+		},
+		"n35_leke": {
+			"hidden": true,
+			"collapsed": true
+		},
+		"n39_pra2": {
+			"collapsed": true
+		},
+		"n13_leke": {
+			"locked": true
+		},
+		"n22_leke": {
+			"hidden": true,
+			"collapsed": true,
+			"locked": true
+		},
+		"n11_leke": {
+			"locked": true
+		},
+		"n10_leke": {
+			"collapsed": true,
+			"locked": true
+		},
+		"n18_leke": {
+			"hidden": true,
+			"collapsed": true,
+			"locked": true
+		}
+	}
+}

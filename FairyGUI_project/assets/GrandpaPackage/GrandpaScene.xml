@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <graph id="n0_en0o" name="Background" xy="0,0" size="800,600" type="rect" fillColor="#ff000000"/>
+    <component id="n1_en0o" name="Avatar" src="en0oc" fileName="Avatar.xml" xy="0,0"/>
+    <component id="n2_en0o" name="Dialog" src="en0oe" fileName="Dialog.xml" xy="145,0" size="588,120">
+      <Label titleFontSize="16"/>
+    </component>
+    <component id="n3_en0o" name="NextButton" src="en0of" fileName="NextButton.xml" xy="733,0"/>
+    <image id="n4_en0o" name="n4" src="en0o8" fileName="场景2-墙纸.png" xy="-615,120" size="2030,450" group="n14_en0o"/>
+    <image id="n5_en0o" name="n5" src="en0o6" fileName="场景2-书柜.png" xy="-485,197" size="380,373" group="n14_en0o"/>
+    <image id="n6_en0o" name="n6" src="en0o3" fileName="场景2-椅子.png" xy="177,356" size="121,178" group="n14_en0o"/>
+    <image id="n7_en0o" name="n7" src="en0o7" fileName="场景2-书法.png" xy="255,142" size="364,130" group="n14_en0o"/>
+    <image id="n8_en0o" name="n8" src="en0o2" fileName="场景2-桌子.png" xy="369,364" size="110,160" group="n14_en0o"/>
+    <image id="n9_en0o" name="n9" src="en0o3" fileName="场景2-椅子.png" xy="561,354" size="129,176" group="n14_en0o"/>
+    <image id="n10_en0o" name="n10" src="en0o1" fileName="场景2-窗框.png" xy="709,121" size="308,292" group="n14_en0o"/>
+    <image id="n11_en0o" name="n11" src="en0o9" fileName="场景2-盆栽.png" xy="1028,252" size="110,278" group="n14_en0o"/>
+    <image id="n12_en0o" name="n12" src="en0o4" fileName="场景2-衣柜.png" xy="1192,192" size="188,336" group="n14_en0o"/>
+    <image id="n13_en0o" name="n13" src="en0ob" fileName="场景2-地面.png" xy="-614,548" size="2006,22" group="n14_en0o"/>
+    <group id="n14_en0o" name="Wallpaper" xy="-615,120" size="2030,450" advanced="true"/>
+    <component id="n15_en0o" name="n15" src="en0oi" fileName="Mask.xml" xy="0,0" group="n22_en0o"/>
+    <component id="n19_en0o" name="Button_1_A" src="en0oj" fileName="CommonButton.xml" xy="300,180" group="n22_en0o">
+      <Button title="人工智能交互设计师"/>
+    </component>
+    <component id="n20_en0o" name="Button_1_B" src="en0oj" fileName="CommonButton.xml" xy="300,268" group="n22_en0o">
+      <Button title="李之一的朋友"/>
+    </component>
+    <component id="n21_en0o" name="Button_1_C" src="en0oj" fileName="CommonButton.xml" xy="300,360" group="n22_en0o">
+      <Button title="求学中医的人"/>
+    </component>
+    <group id="n22_en0o" name="Mask_1" xy="0,0" size="800,600" advanced="true"/>
+    <component id="n23_en0o" name="n23" src="en0oi" fileName="Mask.xml" xy="0,0" group="n27_en0o"/>
+    <component id="n24_en0o" name="Button_2_A" src="en0oj" fileName="CommonButton.xml" xy="300,200" group="n27_en0o">
+      <Button title="想研究一下cure的数据原因"/>
+    </component>
+    <component id="n25_en0o" name="Button_2_B" src="en0oj" fileName="CommonButton.xml" xy="300,288" group="n27_en0o"/>
+    <component id="n26_en0o" name="Button_2_C" src="en0oj" fileName="CommonButton.xml" xy="300,368" group="n27_en0o"/>
+    <group id="n27_en0o" name="Mask_2" xy="0,0" size="800,600" advanced="true"/>
+  </displayList>
+</component>
