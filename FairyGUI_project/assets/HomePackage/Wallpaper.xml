@@ -2,12 +2,12 @@
 <component size="800,450" overflow="scroll" scroll="horizontal">
   <displayList>
     <image id="n0_91fr" name="n0" src="g1ogr" fileName="场景1-墙纸.png" xy="0,0" size="1200,450"/>
-    <image id="n3_91fr" name="n3" src="g1ogd" fileName="场景1-古风桌子.png" xy="261,195" size="205,255"/>
     <image id="n6_91fr" name="n6" src="g1ogf" fileName="场景1-吊灯.png" xy="482,0" size="229,50"/>
     <component id="n10_o7aq" name="Shelf" src="o7aq1q" fileName="Shelf.xml" xy="21,254"/>
     <component id="n11_rrul" name="n11" src="rrul1s" fileName="ChineseZither.xml" xy="192,152"/>
     <component id="n12_jhew" name="n12" src="jhew1u" fileName="Clock.xml" xy="559,201"/>
     <component id="n13_jhew" name="n13" src="jhew1w" fileName="Piano.xml" xy="732,252"/>
     <component id="n14_jhew" name="Picture" src="jhew1y" fileName="Picture.xml" xy="963,31"/>
+    <component id="n15_jcvc" name="Desk" src="jcvc1z" fileName="Desk.xml" xy="329,191"/>
   </displayList>
 </component>

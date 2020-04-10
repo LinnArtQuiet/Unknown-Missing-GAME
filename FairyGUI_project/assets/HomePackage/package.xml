@@ -51,6 +51,8 @@
     <component id="jhew1w" name="Piano.xml" path="/"/>
     <sound id="jhew1x" name="Piano.mp3" path="/"/>
     <component id="jhew1y" name="Picture.xml" path="/"/>
+    <component id="jcvc1z" name="Desk.xml" path="/"/>
+    <image id="jcvc21" name="邮件系统_进入button.png" path="/"/>
   </resources>
   <publish name="HomePackage" path="E:\workspace\Unity\UnknownMissingGame\Assets\Resources\HomePackage" packageCount="2"/>
 </packageDescription>

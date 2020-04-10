@@ -13,11 +13,18 @@ public partial class HomeScene : MonoBehaviour
 
     public AudioSource sound;
     public AudioClip click_wav;
+    public AudioSource music;
+    public AudioClip bgm_wav;
 
     void Start() // 主要用来完成初始化和控件获得
     {
         sound = gameObject.AddComponent<AudioSource>();
         click_wav = Resources.Load<AudioClip>("music/Click");
+        music = gameObject.AddComponent<AudioSource>();
+        bgm_wav = Resources.Load<AudioClip>("music/HomeScene");
+        music.clip = bgm_wav;
+        music.loop = true;
+        music.Play();
         initUI(); // 在HomeScene_UI.cs文件中
         m_i = PlayerPrefs.GetInt("m_i");
         isActive = true; // 开始动画

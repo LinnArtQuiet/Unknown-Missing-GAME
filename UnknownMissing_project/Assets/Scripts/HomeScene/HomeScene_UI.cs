@@ -93,6 +93,8 @@ public partial class HomeScene : MonoBehaviour{
         button_2_1_1_1_1.onClick.Add(button_2_1_1_1_1_Click);
 
         m_console = view.GetChild("Console").asGroup;
+        GComponent consoleMask = view.GetChild("ConsoleMask").asCom;
+        consoleMask.onClick.Add(consoleMask_Click);
         m_clue = view.GetChild("Clue").asGroup;
         GButton clueOKButton = view.GetChild("ClueOKButton").asButton;
         clueOKButton.onClick.Add(clueOKButton_Click);
@@ -118,6 +120,8 @@ public partial class HomeScene : MonoBehaviour{
         shelf.onClick.Add(shelf_Click);
         GButton picture = m_wallpaper.GetChild("Picture").asButton;
         picture.onClick.Add(picture_Click);
+        GButton desk = m_wallpaper.GetChild("Desk").asButton;
+        desk.onClick.Add(desk_Click);
     }
 }
 }

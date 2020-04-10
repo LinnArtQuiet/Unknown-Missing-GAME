@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="145,120">
+  <displayList>
+    <graph id="n1_o1y5" name="n1" xy="0,0" size="145,120" type="rect" fillColor="#ff000000"/>
+    <image id="n0_o1y5" name="n0" src="o1y5o" fileName="角色5_待用头像.png" xy="35,23" size="75,74"/>
+  </displayList>
+</component>

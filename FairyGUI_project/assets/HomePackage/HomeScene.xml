@@ -74,10 +74,10 @@
       <Label titleColor="#ffffff"/>
     </component>
     <group id="n87_en0o" name="Mail" xy="200,150" size="400,300" visible="false" advanced="true"/>
-    <component id="n92_en0o" name="n92" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n96_en0o"/>
-    <component id="n93_en0o" name="n93" src="g1og6" fileName="CollectButton.xml" xy="494,173" size="300,70" group="n96_en0o"/>
-    <component id="n94_en0o" name="n94" src="en0o16" fileName="MailReadButton.xml" xy="492,301" size="300,70" group="n96_en0o"/>
-    <component id="n95_en0o" name="n95" src="g1og5" fileName="DriveButton.xml" xy="488,416" size="300,70" group="n96_en0o"/>
+    <component id="n92_en0o" name="ConsoleMask" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n96_en0o"/>
+    <component id="n93_en0o" name="CollectionButton" src="g1og6" fileName="CollectButton.xml" xy="500,189" size="300,70" group="n96_en0o"/>
+    <component id="n94_en0o" name="MailButton" src="en0o16" fileName="MailReadButton.xml" xy="500,301" size="300,70" group="n96_en0o"/>
+    <component id="n95_en0o" name="DriveButton" src="g1og5" fileName="DriveButton.xml" xy="500,416" size="300,70" group="n96_en0o"/>
     <group id="n96_en0o" name="Console" xy="0,0" size="800,600" visible="false" advanced="true"/>
     <component id="n108_rl2x" name="GuildMask" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n99_en0o"/>
     <graph id="n124_o7aq" name="n124" xy="249,301" size="54,48" group="n99_en0o" type="regular_polygon" sides="3"/>

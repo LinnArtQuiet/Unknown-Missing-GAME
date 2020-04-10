@@ -24,6 +24,8 @@
     <component id="o7aqk" name="MailReadButton.xml" path="/"/>
     <component id="o7aql" name="DriveButton.xml" path="/"/>
     <image id="o7aqm" name="无人驾驶系统_进入button.png" path="/"/>
+    <component id="o1y5n" name="AvatarGuard.xml" path="/"/>
+    <image id="o1y5o" name="角色5_待用头像.png" path="/"/>
   </resources>
   <publish name="GracePackage"/>
 </packageDescription>

@@ -63,7 +63,6 @@ public partial class GrandpaScene : MonoBehaviour{
             PlayerPrefs.SetInt("m_i", 14);
             SceneManager.LoadScene("DriveScene");
         }
-        
     }
     void button_1_a_Click(){
         m_mask_1.visible = false;

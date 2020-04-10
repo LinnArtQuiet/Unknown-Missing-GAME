@@ -7,6 +7,7 @@ public partial class GraceScene : MonoBehaviour{
     private GLabel m_dialog; // 显示字符串的面板
     private GButton m_nextButton;
     private GGroup m_console;
+    private GGroup m_entrance;
 
     public void initUI(){
         UIPanel panel = gameObject.GetComponent<UIPanel>();
@@ -17,8 +18,6 @@ public partial class GraceScene : MonoBehaviour{
         m_nextButton = view.GetChild("NextButton").asButton;
         m_nextButton.onClick.Add(nextButton_Click);
         m_console= view.GetChild("Console").asGroup;
-        GButton driveButton = view.GetChild("DriveButton").asButton;
-        driveButton.onClick.Add(driveButton_Click);
     }
     void nextButton_Click(){
         if((m_i>=0) && (m_i<6)){

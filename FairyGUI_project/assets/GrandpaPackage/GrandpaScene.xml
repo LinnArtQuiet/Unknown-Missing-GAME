@@ -10,25 +10,25 @@
     </component>
     <component id="n3_en0o" name="NextButton" src="en0of" fileName="NextButton.xml" xy="733,0"/>
     <component id="n15_en0o" name="n15" src="en0oi" fileName="Mask.xml" xy="0,0" group="n22_en0o"/>
-    <component id="n19_en0o" name="Button_1_A" src="en0oj" fileName="CommonButton.xml" xy="233,180" size="334,50" group="n22_en0o">
-      <Button title="人工智能交互设计师"/>
+    <component id="n19_en0o" name="Button_1_A" src="en0oj" fileName="CommonButton.xml" xy="298,183" size="204,50" group="n22_en0o">
+      <Button title="人工智能交互设计师" titleFontSize="16"/>
     </component>
-    <component id="n20_en0o" name="Button_1_B" src="en0oj" fileName="CommonButton.xml" xy="249,268" size="302,50" group="n22_en0o">
-      <Button title="李之一的朋友"/>
+    <component id="n20_en0o" name="Button_1_B" src="en0oj" fileName="CommonButton.xml" xy="301,268" size="197,50" group="n22_en0o">
+      <Button title="李之一的朋友" titleFontSize="16"/>
     </component>
-    <component id="n21_en0o" name="Button_1_C" src="en0oj" fileName="CommonButton.xml" xy="265,360" size="270,50" group="n22_en0o">
-      <Button title="求学中医的人"/>
+    <component id="n21_en0o" name="Button_1_C" src="en0oj" fileName="CommonButton.xml" xy="297,360" size="205,50" group="n22_en0o">
+      <Button title="求学中医的人" titleFontSize="16"/>
     </component>
     <group id="n22_en0o" name="Mask_1" xy="0,0" size="800,600" visible="false" advanced="true"/>
     <component id="n23_en0o" name="n23" src="en0oi" fileName="Mask.xml" xy="0,0" group="n27_en0o"/>
-    <component id="n24_en0o" name="Button_2_A" src="en0oj" fileName="CommonButton.xml" xy="197,200" size="406,50" group="n27_en0o">
-      <Button title="想研究一下cure的数据原因" selectedTitle="想研究一下cure的数据原因"/>
+    <component id="n24_en0o" name="Button_2_A" src="en0oj" fileName="CommonButton.xml" xy="289,176" size="222,37" group="n27_en0o">
+      <Button title="想研究一下cure的数据原因" titleFontSize="16" selectedTitle="想研究一下cure的数据原因"/>
     </component>
-    <component id="n25_en0o" name="Button_2_B" src="en0oj" fileName="CommonButton.xml" xy="187,288" size="426,50" group="n27_en0o">
-      <Button title="想来找李叙叙旧，听他说您生病了，也想来看望看望您"/>
+    <component id="n25_en0o" name="Button_2_B" src="en0oj" fileName="CommonButton.xml" xy="318,248" size="163,86" group="n27_en0o">
+      <Button title="想来找李叙叙旧，&#xD;听他说您生病了，&#xD;也想来看望看望您" titleFontSize="16"/>
     </component>
-    <component id="n26_en0o" name="Button_2_C" src="en0oj" fileName="CommonButton.xml" xy="199,368" size="402,130" group="n27_en0o">
-      <Button title="从小就感兴趣，苦于无良师指导，不过听Lee说，您对中医研究颇深，冒昧拜访不知爷爷能否指点一二。"/>
+    <component id="n26_en0o" name="Button_2_C" src="en0oj" fileName="CommonButton.xml" xy="316,373" size="168,98" group="n27_en0o">
+      <Button title="从小就感兴趣，&#xD;苦于无良师指导，&#xD;不过听Lee说，&#xD;您对中医研究颇深，&#xD;冒昧拜访不知爷爷能否指点一二。" titleFontSize="16"/>
     </component>
     <group id="n27_en0o" name="Mask_2" xy="0,0" size="800,600" visible="false" advanced="true"/>
   </displayList>

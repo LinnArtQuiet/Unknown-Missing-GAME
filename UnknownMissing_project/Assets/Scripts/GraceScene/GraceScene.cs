@@ -6,13 +6,22 @@ using FairyGUI;
 namespace app{
 public partial class GraceScene : MonoBehaviour
 {
+    public AudioSource music;
+    public AudioClip bgm_wav;
+
     int m_i = 0;
     float timer = 0.0f; 
     bool isActive = false;
     int currentPos = 0; 
     void Start()
     {
-        // m_i = PlayerPrefs.GetInt("m_i");
+        music = gameObject.AddComponent<AudioSource>();
+        bgm_wav = Resources.Load<AudioClip>("music/DrScene");
+        music.clip = bgm_wav;
+        music.loop = true;
+        music.Play();
+
+        m_i = PlayerPrefs.GetInt("m_i");
         initUI();
         isActive = true;
         Debug.Log("start!");

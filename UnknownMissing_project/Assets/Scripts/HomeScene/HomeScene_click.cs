@@ -237,5 +237,11 @@ public partial class HomeScene : MonoBehaviour{
         m_clue_simple_content.text = clue_strs[2];
         m_clue_simple.visible = true;
     }
+    void desk_Click(){
+        m_console.visible = true;
+    }
+    void consoleMask_Click(){
+        m_console.visible = false;
+    }
 }
 }

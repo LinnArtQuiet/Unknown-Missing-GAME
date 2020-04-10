@@ -5,12 +5,20 @@ using FairyGUI;
 namespace app{
 public partial class GrandpaScene : MonoBehaviour
 {
+    public AudioSource music;
+    public AudioClip bgm_wav;
+    
     int m_i = 0;
     float timer = 0.0f; 
     bool isActive = false;
     int currentPos = 0; 
     void Start()
     {
+        music = gameObject.AddComponent<AudioSource>();
+        bgm_wav = Resources.Load<AudioClip>("music/GrandpaScene");
+        music.clip = bgm_wav;
+        music.loop = true;
+        music.Play();
         initUI();
         isActive = true;
         Debug.Log("start! 第二章开始！");
