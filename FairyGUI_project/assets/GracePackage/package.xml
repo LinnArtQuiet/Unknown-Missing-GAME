@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="29y2vr02">
+  <resources>
+    <image id="jgen0" name="场景3前置门禁_指纹识别.png" path="/"/>
+    <image id="jgen1" name="场景3前置门禁_人脸识别.png" path="/"/>
+    <image id="jgen2" name="场景3前置门禁_全览图.png" path="/"/>
+    <image id="jgen3" name="场景3前置门禁_底色.png" path="/"/>
+    <image id="jgen4" name="场景3-Grace的实验室_全览图.png" path="/"/>
+    <image id="jgen5" name="场景3_世界地图.png" path="/"/>
+    <image id="jgen6" name="场景3_实验桌.png" path="/"/>
+    <image id="jgen7" name="场景3_墙纸.png" path="/"/>
+    <image id="jgen8" name="场景3_科技球.png" path="/"/>
+    <image id="jgen9" name="场景3_科技大脑.png" path="/"/>
+    <image id="jgena" name="场景3_地面.png" path="/"/>
+    <component id="jgenb" name="GraceScene.xml" path="/" exported="true"/>
+    <component id="jgenc" name="WallPaper.xml" path="/"/>
+    <component id="jgend" name="Dialog.xml" path="/"/>
+    <component id="jgene" name="NextButton.xml" path="/"/>
+    <component id="o7aqf" name="AvatarTaoxi.xml" path="/"/>
+    <image id="o7aqg" name="主人公_陶夕头像.png" path="/"/>
+    <component id="o7aqh" name="Mask.xml" path="/"/>
+    <component id="o7aqi" name="CollectButton.xml" path="/"/>
+    <image id="o7aqj" name="线索收集系统_进入Button.png" path="/"/>
+    <component id="o7aqk" name="MailReadButton.xml" path="/"/>
+    <component id="o7aql" name="DriveButton.xml" path="/"/>
+    <image id="o7aqm" name="无人驾驶系统_进入button.png" path="/"/>
+  </resources>
+  <publish name="GracePackage"/>
+</packageDescription>

@@ -6,14 +6,22 @@ using FairyGUI;
 namespace app{
 public partial class HomeScene : MonoBehaviour
 {
-    int m_i = 39; // 控制流程的标志，一般就是控制游戏进程的，非常重要
+    int m_i = 50; // 控制流程的标志，一般就是控制游戏进程的，非常重要
     float timer = 0.0f; // 蹦字用的计时器
     bool isActive = false; // 是否处在打字过程中
     int currentPos = 0; // 打字的位置
+
+    public AudioSource sound;
+    public AudioClip click_wav;
+
     void Start() // 主要用来完成初始化和控件获得
     {
+        sound = gameObject.AddComponent<AudioSource>();
+        click_wav = Resources.Load<AudioClip>("music/Click");
         initUI(); // 在HomeScene_UI.cs文件中
+        m_i = PlayerPrefs.GetInt("m_i");
         isActive = true; // 开始动画
+        Debug.Log("start! 第一章开始！");
         Debug.Log("start! 第一章开始！");
     }
     void Update()
@@ -76,6 +84,11 @@ public partial class HomeScene : MonoBehaviour
             m_dialog.text = strs[m_i];
         }
         m_i++; // 自动下一条语句的设置
+    }
+    void ChangeAvatar(int i){
+        m_avatar[0].visible = false;
+        m_avatar[1].visible = false;
+        m_avatar[i].visible = true;
     }
 }
 }

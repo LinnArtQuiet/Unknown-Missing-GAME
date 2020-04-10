@@ -5,7 +5,7 @@ using FairyGUI;
 namespace app{
 public partial class GrandpaScene : MonoBehaviour
 {
-    int m_i = 25;
+    int m_i = 0;
     float timer = 0.0f; 
     bool isActive = false;
     int currentPos = 0; 
@@ -51,6 +51,11 @@ public partial class GrandpaScene : MonoBehaviour
         currentPos = 0;
         m_dialog.text = strs[m_i];
         m_i++; 
+    }
+    void ChangeAvatar(int i){
+        m_avatar[0].visible = false;
+        m_avatar[1].visible = false;
+        m_avatar[i].visible = true;
     }
 }
 }

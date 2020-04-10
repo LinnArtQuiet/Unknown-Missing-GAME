@@ -2,20 +2,13 @@
 <component size="800,600">
   <displayList>
     <graph id="n28_en0o" name="Background" xy="0,0" size="800,600" type="rect" fillColor="#ff000000"/>
-    <component id="n31_en0o" name="Avatar" src="en0o1c" fileName="Avatar.xml" xy="0,0"/>
+    <component id="n111_rl2x" name="WallPaper" src="91frw" fileName="WallPaper.xml" xy="0,120"/>
+    <component id="n31_en0o" name="AvatarComp" src="en0o1c" fileName="AvatarComp.xml" xy="0,0"/>
+    <component id="n118_o7aq" name="AvatarTaoxi" src="o7aq1h" fileName="AvatarTaoxi.xml" xy="0,0"/>
     <component id="n43_en0o" name="Dialog" src="leke13" fileName="Dialog.xml" xy="145,0" size="588,120">
       <Label titleFontSize="16"/>
     </component>
     <component id="n44_en0o" name="NextButton" src="g1ogq" fileName="NextButton.xml" xy="733,0"/>
-    <image id="n45_en0o" name="n45" src="g1ogr" fileName="场景1-墙纸.png" xy="-200,120" size="1200,450" group="n53_en0o"/>
-    <image id="n46_en0o" name="n46" src="g1ogj" fileName="场景1-全息投影.png" xy="741,133" size="206,175" group="n53_en0o"/>
-    <image id="n47_en0o" name="n47" src="g1ogl" fileName="场景1-落地钟.png" xy="356,324" size="88,246" group="n53_en0o"/>
-    <image id="n48_en0o" name="n48" src="g1ogd" fileName="场景1-古风桌子.png" xy="61,315" size="205,255" group="n53_en0o"/>
-    <image id="n49_en0o" name="n49" src="g1ogn" fileName="场景1-古琴.png" xy="-18,271" size="60,194" group="n53_en0o"/>
-    <image id="n50_en0o" name="n50" src="g1oge" fileName="场景1-钢琴.png" xy="486,377" size="317,193" group="n53_en0o"/>
-    <image id="n51_en0o" name="n51" src="g1ogf" fileName="场景1-吊灯.png" xy="282,120" size="229,50" group="n53_en0o"/>
-    <image id="n52_en0o" name="n52" src="g1ogh" fileName="场景1-博古架.png" xy="-174,382" size="151,188" group="n53_en0o"/>
-    <group id="n53_en0o" name="Wallpaper" xy="-200,120" size="1200,450"/>
     <component id="n54_en0o" name="n54" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n57_en0o"/>
     <component id="n55_en0o" name="Button_1" src="g1og2" fileName="CommonButton.xml" xy="298,195" group="n57_en0o">
       <Button title="Lee是谁？"/>
@@ -23,7 +16,7 @@
     <component id="n56_en0o" name="Button_2" src="g1og2" fileName="CommonButton.xml" xy="253,286" size="293,50" group="n57_en0o">
       <Button title="邮件内容是什么？"/>
     </component>
-    <group id="n57_en0o" name="Mask_0" xy="0,0" size="800,600" advanced="true"/>
+    <group id="n57_en0o" name="Mask_0" xy="0,0" size="800,600" visible="false" advanced="true"/>
     <component id="n58_en0o" name="n58" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n61_en0o"/>
     <component id="n60_en0o" name="Button_1_2" src="g1og2" fileName="CommonButton.xml" xy="306,292" size="188,50" group="n61_en0o">
       <Button title="阅读"/>
@@ -31,18 +24,18 @@
     <component id="n59_en0o" name="Button_1_1" src="g1og2" fileName="CommonButton.xml" xy="245,201" size="310,50" group="n61_en0o">
       <Button title="（更喜欢纸质阅读）"/>
     </component>
-    <group id="n61_en0o" name="Mask_1" xy="0,0" size="800,600" advanced="true"/>
+    <group id="n61_en0o" name="Mask_1" xy="0,0" size="800,600" visible="false" advanced="true"/>
     <component id="n65_en0o" name="n65" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n69_en0o"/>
     <component id="n66_en0o" name="Button_1_1_1" src="g1og2" fileName="CommonButton.xml" xy="300,208" group="n69_en0o">
       <Button title="看看吧"/>
     </component>
-    <component id="n67_en0o" name="Button_1_1_2" src="g1og2" fileName="CommonButton.xml" xy="300,287" group="n69_en0o">
+    <component id="n67_en0o" name="Button_1_1_2" src="g1og2" fileName="CommonButton.xml" xy="261,287" size="277,50" group="n69_en0o">
       <Button title="无事不登三宝殿"/>
     </component>
     <component id="n68_en0o" name="Button_1_1_3" src="g1og2" fileName="CommonButton.xml" xy="300,364" group="n69_en0o">
       <Button title="不看"/>
     </component>
-    <group id="n69_en0o" name="Mask_1_1" xy="0,0" size="800,600" advanced="true"/>
+    <group id="n69_en0o" name="Mask_1_1" xy="0,0" size="800,600" visible="false" advanced="true"/>
     <component id="n70_en0o" name="n70" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n73_en0o"/>
     <component id="n71_en0o" name="Button_2_1" src="g1og2" fileName="CommonButton.xml" xy="300,204" group="n73_en0o">
       <Button title="回信"/>
@@ -50,43 +43,86 @@
     <component id="n72_en0o" name="Button_2_2" src="g1og2" fileName="CommonButton.xml" xy="300,291" group="n73_en0o">
       <Button title="不回"/>
     </component>
-    <group id="n73_en0o" name="Mask_2" xy="0,0" size="800,600" advanced="true"/>
+    <group id="n73_en0o" name="Mask_2" xy="0,0" size="800,600" visible="false" advanced="true"/>
     <component id="n74_en0o" name="n74" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n76_en0o"/>
     <component id="n75_en0o" name="Button_2_1_1" src="g1og2" fileName="CommonButton.xml" xy="300,215" group="n76_en0o">
       <Button title="一分钟后"/>
     </component>
-    <group id="n76_en0o" name="Mask_2_1" xy="0,0" size="800,600" advanced="true"/>
+    <group id="n76_en0o" name="Mask_2_1" xy="0,0" size="800,600" visible="false" advanced="true"/>
     <component id="n78_en0o" name="n78" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n80_en0o"/>
     <component id="n79_en0o" name="Button_2_1_1_1" src="g1og2" fileName="CommonButton.xml" xy="300,207" group="n80_en0o">
       <Button title="阅读邮件"/>
     </component>
-    <group id="n80_en0o" name="Mask_2_1_1" xy="0,0" size="800,600" advanced="true"/>
+    <group id="n80_en0o" name="Mask_2_1_1" xy="0,0" size="800,600" visible="false" advanced="true"/>
     <component id="n81_en0o" name="n81" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n83_en0o"/>
-    <component id="n82_en0o" name="Button_2_1_1_1_1" src="g1og2" fileName="CommonButton.xml" xy="300,197" group="n83_en0o"/>
-    <group id="n83_en0o" name="Mask_2_1_1_1" xy="0,0" size="800,600" advanced="true"/>
+    <component id="n82_en0o" name="Button_2_1_1_1_1" src="g1og2" fileName="CommonButton.xml" xy="240,197" size="319,50" group="n83_en0o">
+      <Button title="CURE的使用记录"/>
+    </component>
+    <component id="n112_rl2x" name="Button_2_1_1_1_2" src="g1og2" fileName="CommonButton.xml" xy="241,274" size="318,50" group="n83_en0o">
+      <Button title="CURE的GPS数据"/>
+    </component>
+    <group id="n83_en0o" name="Mask_2_1_1_1" xy="0,0" size="800,600" visible="false" advanced="true"/>
     <component id="n84_en0o" name="n84" src="imxqx" fileName="Mail.xml" xy="200,150" group="n87_en0o"/>
     <component id="n85_en0o" name="MailCloseButton" src="imxqz" fileName="CloseButton.xml" xy="559,156" group="n87_en0o"/>
     <component id="n86_en0o" name="MailOKButton" src="imxq10" fileName="OKButton.xml" xy="353,401" size="93,34" group="n87_en0o">
       <Button title="OK"/>
     </component>
-    <group id="n87_en0o" name="Mail" xy="200,150" size="400,300" advanced="true"/>
-    <component id="n88_en0o" name="n88" src="pra214" fileName="PersonalData.xml" xy="200,150" group="n90_en0o"/>
-    <component id="n89_en0o" name="PersonalDataOKButton" src="imxq10" fileName="OKButton.xml" xy="367,377" group="n90_en0o">
-      <Button title="OK"/>
+    <component id="n121_o7aq" name="MailSender" src="o7aq1j" fileName="MailSender.xml" xy="220,192" size="100,29" group="n87_en0o">
+      <Label titleColor="#ffffff"/>
     </component>
-    <group id="n90_en0o" name="PersonalData" xy="200,150" size="400,300" advanced="true"/>
+    <component id="n122_o7aq" name="MailContent" src="o7aq1k" fileName="MailContent.xml" xy="229,230" size="352,90" group="n87_en0o">
+      <Label titleColor="#ffffff"/>
+    </component>
+    <group id="n87_en0o" name="Mail" xy="200,150" size="400,300" visible="false" advanced="true"/>
     <component id="n92_en0o" name="n92" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n96_en0o"/>
-    <component id="n93_en0o" name="n93" src="g1og6" fileName="CollectButton.xml" xy="497,223" size="304,74" group="n96_en0o"/>
-    <component id="n94_en0o" name="n94" src="en0o16" fileName="MailReadButton.xml" xy="500,328" size="301,71" group="n96_en0o"/>
-    <component id="n95_en0o" name="n95" src="g1og5" fileName="DriveButton.xml" xy="497,442" size="304,69" group="n96_en0o"/>
-    <group id="n96_en0o" name="Mask_Console" xy="0,0" size="801,600" advanced="true"/>
-    <image id="n91_en0o" name="n91" src="en0o17" fileName="角色1-comp_4.png" xy="75,350" size="166,179" group="n99_en0o"/>
-    <component id="n98_en0o" name="n98" src="en0o1d" fileName="Guild_Dialog.xml" xy="261,155" group="n99_en0o"/>
-    <group id="n99_en0o" name="Guild" xy="75,155" size="366,374" advanced="true"/>
-    <component id="n100_en0o" name="n100" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n107_en0o"/>
-    <component id="n101_en0o" name="n101" src="en0o1e" fileName="Clue.xml" xy="200,186" group="n107_en0o"/>
-    <component id="n104_en0o" name="n104" src="en0o1f" fileName="ClueLabel.xml" xy="199,261" group="n107_en0o"/>
-    <component id="n102_en0o" name="n102" src="imxqz" fileName="CloseButton.xml" xy="558,195" group="n107_en0o"/>
-    <group id="n107_en0o" name="Clue" xy="0,0" size="800,600" advanced="true"/>
+    <component id="n93_en0o" name="n93" src="g1og6" fileName="CollectButton.xml" xy="494,173" size="300,70" group="n96_en0o"/>
+    <component id="n94_en0o" name="n94" src="en0o16" fileName="MailReadButton.xml" xy="492,301" size="300,70" group="n96_en0o"/>
+    <component id="n95_en0o" name="n95" src="g1og5" fileName="DriveButton.xml" xy="488,416" size="300,70" group="n96_en0o"/>
+    <group id="n96_en0o" name="Console" xy="0,0" size="800,600" visible="false" advanced="true"/>
+    <component id="n108_rl2x" name="GuildMask" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n99_en0o"/>
+    <graph id="n124_o7aq" name="n124" xy="249,301" size="54,48" group="n99_en0o" type="regular_polygon" sides="3"/>
+    <component id="n98_en0o" name="GuildDialog" src="en0o1d" fileName="GuildDialog.xml" xy="261,155" group="n99_en0o">
+      <Label title="Dialog test"/>
+    </component>
+    <image id="n123_o7aq" name="n123" src="o7aq1l" fileName="comp_4.png" xy="35,325" size="195,209" group="n99_en0o"/>
+    <group id="n99_en0o" name="Guild" xy="0,0" size="800,600" visible="false" advanced="true"/>
+    <component id="n113_12n34" name="n113" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n117_12n34"/>
+    <component id="n115_12n34" name="n115" src="en0o1e" fileName="Clue.xml" xy="150,177" group="n117_12n34"/>
+    <component id="n126_o7aq" name="ClueContent" src="o7aq1n" fileName="ClueContent.xml" xy="180,279" group="n117_12n34">
+      <Label title="CULE的使用记录"/>
+    </component>
+    <component id="n125_o7aq" name="ClueCheckButton" src="g1og2" fileName="CommonButton.xml" xy="533,280" size="98,50" group="n117_12n34">
+      <Button title="查看" titleFontSize="20"/>
+    </component>
+    <component id="n116_12n34" name="ClueOKButton" src="g1og2" fileName="CommonButton.xml" xy="586,186" size="54,50" group="n117_12n34">
+      <Button title="X"/>
+    </component>
+    <group id="n117_12n34" name="Clue" xy="0,0" size="800,600" visible="false" advanced="true"/>
+    <graph id="n127_o7aq" name="n127" xy="115,159" size="570,330" group="n131_o7aq" type="rect" fillColor="#ff333333"/>
+    <component id="n128_o7aq" name="ClueDetailCloseButton" src="g1og2" fileName="CommonButton.xml" xy="622,172" size="47,50" group="n131_o7aq">
+      <Button title="X"/>
+    </component>
+    <component id="n129_o7aq" name="ClueDetailContent" src="o7aq1o" fileName="ClueDetailContent.xml" xy="200,224" group="n131_o7aq">
+      <Label title="test"/>
+    </component>
+    <text id="n130_o7aq" name="n130" xy="208,193" size="150,25" group="n131_o7aq" fontSize="11" color="#ffffff" autoSize="none" text="线索：CURE的使用记录"/>
+    <group id="n131_o7aq" name="ClueDetail" xy="115,159" size="570,330" visible="false" advanced="true"/>
+    <component id="n133_o7aq" name="n133" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n136_o7aq"/>
+    <component id="n134_o7aq" name="GraceButton" src="g1og2" fileName="CommonButton.xml" xy="300,201" group="n136_o7aq">
+      <Button title="Grace"/>
+    </component>
+    <component id="n135_o7aq" name="GrandpaButton" src="g1og2" fileName="CommonButton.xml" xy="300,307" group="n136_o7aq">
+      <Button title="Grandpa"/>
+    </component>
+    <group id="n136_o7aq" name="ChangeScene" xy="0,0" size="800,600" visible="false" advanced="true"/>
+    <component id="n142_rrul" name="n142" src="g1ogs" fileName="Mask.xml" xy="0,0" group="n141_rrul"/>
+    <graph id="n137_rrul" name="n1371" xy="115,135" size="570,330" group="n141_rrul" type="rect" fillColor="#ff333333"/>
+    <component id="n138_rrul" name="ClueSimpleCloseButton" src="g1og2" fileName="CommonButton.xml" xy="622,148" size="47,50" group="n141_rrul">
+      <Button title="X"/>
+    </component>
+    <component id="n139_rrul" name="ClueSimpleContent" src="o7aq1o" fileName="ClueDetailContent.xml" xy="200,200" group="n141_rrul">
+      <Label title="test"/>
+    </component>
+    <group id="n141_rrul" name="ClueSimple" xy="0,0" size="800,600" visible="false" advanced="true"/>
   </displayList>
 </component>

@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 1501200241}
   - component: {fileID: 1501200240}
   - component: {fileID: 1501200239}
+  - component: {fileID: 1501200242}
   m_Layer: 0
   m_Name: Stage Camera
   m_TagString: Untagged
@@ -208,6 +209,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1501200242
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501200238}
+  m_Enabled: 1
 --- !u!1 &2084158240
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,3 +309,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee4f8bf80ddc8d43bba7ef224bd989a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  music: {fileID: 0}
+  click_wav: {fileID: 0}

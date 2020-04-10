@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="800,600">
+<component size="800,450" overflow="scroll" scroll="horizontal">
   <displayList>
-    <image id="n0_en0o" name="n0" src="en0o8" fileName="场景2-墙纸.png" xy="-664,120" size="2030,450"/>
-    <image id="n1_en0o" name="n1" src="en0o6" fileName="场景2-书柜.png" xy="-534,197" size="380,373"/>
-    <image id="n2_en0o" name="n2" src="en0o3" fileName="场景2-椅子.png" xy="128,356" size="121,178"/>
-    <image id="n3_en0o" name="n3" src="en0o7" fileName="场景2-书法.png" xy="206,142" size="364,130"/>
-    <image id="n4_en0o" name="n4" src="en0o2" fileName="场景2-桌子.png" xy="320,364" size="110,160"/>
-    <image id="n5_en0o" name="n5" src="en0o3" fileName="场景2-椅子.png" xy="512,354" size="129,176"/>
-    <image id="n6_en0o" name="n6" src="en0o1" fileName="场景2-窗框.png" xy="660,121" size="308,292"/>
-    <image id="n7_en0o" name="n7" src="en0o9" fileName="场景2-盆栽.png" xy="979,252" size="110,278"/>
-    <image id="n9_en0o" name="n9" src="en0o4" fileName="场景2-衣柜.png" xy="1143,192" size="188,336"/>
-    <image id="n10_en0o" name="n10" src="en0ob" fileName="场景2-地面.png" xy="-663,548" size="2006,22"/>
+    <image id="n11_o7aq" name="n11" src="jgeno" fileName="场景2-墙纸.png" xy="0,0" size="2000,450"/>
+    <image id="n1_en0o" name="n1" src="en0o6" fileName="场景2-书柜.png" xy="66,68" size="380,373"/>
+    <image id="n2_en0o" name="n2" src="en0o3" fileName="场景2-椅子.png" xy="747,249" size="121,178"/>
+    <image id="n3_en0o" name="n3" src="en0o7" fileName="场景2-书法.png" xy="822,39" size="364,130"/>
+    <image id="n4_en0o" name="n4" src="en0o2" fileName="场景2-桌子.png" xy="933,261" size="110,160"/>
+    <image id="n5_en0o" name="n5" src="en0o3" fileName="场景2-椅子.png" xy="1118,253" size="129,176"/>
+    <image id="n6_en0o" name="n6" src="en0o1" fileName="场景2-窗框.png" xy="1268,40" size="308,292"/>
+    <image id="n7_en0o" name="n7" src="en0o9" fileName="场景2-盆栽.png" xy="1607,155" size="110,278"/>
+    <image id="n9_en0o" name="n9" src="en0o4" fileName="场景2-衣柜.png" xy="1761,90" size="188,336"/>
   </displayList>
 </component>

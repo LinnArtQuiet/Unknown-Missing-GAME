@@ -3,7 +3,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace app{
-public partial class GrandpaScene : MonoBehaviour{        
+public partial class GrandpaScene : MonoBehaviour{ 
+    private GComponent[] m_avatar;      
     private GLabel m_dialog; // 显示字符串的面板
     private GGroup m_mask_1;
     private GGroup m_mask_2;
@@ -11,6 +12,9 @@ public partial class GrandpaScene : MonoBehaviour{
     public void initUI(){
         UIPanel panel = gameObject.GetComponent<UIPanel>();
         GComponent view = panel.ui; // 整个UI的集合
+        m_avatar = new GComponent[2];
+        m_avatar[0] = view.GetChild("AvatarGrandpa").asCom;
+        m_avatar[1] = view.GetChild("AvatarTaoxi").asCom;
         // 上面的对话框
         m_dialog = view.GetChild("Dialog").asLabel; 
         m_dialog.text = "";
@@ -51,10 +55,12 @@ public partial class GrandpaScene : MonoBehaviour{
             isActive = true;
         }
         else if((m_i>=8) && (m_i<27)){
+            if(m_i%2 == 0) ChangeAvatar(1);
+            else ChangeAvatar(0);
             ControlDialogue();
         }
         else if(m_i == 27){
-            PlayerPrefs.SetInt("m_i", 13);
+            PlayerPrefs.SetInt("m_i", 14);
             SceneManager.LoadScene("DriveScene");
         }
         

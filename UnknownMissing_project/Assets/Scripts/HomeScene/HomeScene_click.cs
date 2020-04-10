@@ -15,7 +15,8 @@ public partial class HomeScene : MonoBehaviour{
         {
             m_mask_0.visible = true;
         }
-        else if ((m_i>=7) && (m_i<10)){ 
+        else if ((m_i>=7) && (m_i<10)){
+            if(m_i == 8) ChangeAvatar(0); 
             ControlDialogue();
         }
         else if(m_i == 10){ // [玩家操作选择] 选择1.1 ：（更喜欢纸质阅读）；选择1.1 ：阅读
@@ -39,6 +40,7 @@ public partial class HomeScene : MonoBehaviour{
             m_mask_2.visible = true;
         }
         else if((m_i>=19) && (m_i<22)){
+            if(m_i == 20) ChangeAvatar(0);
             ControlDialogue();
         }
         else if(m_i == 22){
@@ -62,10 +64,12 @@ public partial class HomeScene : MonoBehaviour{
         else if(m_i == 30){
             m_dialog.text = "";
             m_guild.visible = true;
+            m_console.visible = true;
             m_i = 31;
             isActive = true;
         }
         else if((m_i>=36) && (m_i<38)){
+            if(m_i == 37) ChangeAvatar(0);
             ControlDialogue();
         }
         else if(m_i == 38){
@@ -87,6 +91,15 @@ public partial class HomeScene : MonoBehaviour{
             PlayerPrefs.SetInt("m_i", 7);
             SceneManager.LoadScene("DriveScene");
             
+        }
+        else if((m_i>=50) && (m_i<56)){
+            ControlDialogue();
+        }
+        else if(m_i == 56){
+            m_change_scene.visible = true;
+        }
+        else if((m_i>=57) && (m_i<65)){
+            ControlDialogue();
         }
     }
     void guildMask_Click()
@@ -111,6 +124,7 @@ public partial class HomeScene : MonoBehaviour{
         m_mail.visible = false;
         if(m_i == 14){ // 1.1.1选择，后接选择2的剧情。
             m_i = 15; // 剧情2
+            ChangeAvatar(1);
             isActive = true; // 开启字幕
         }
         else if(m_i == 25){
@@ -121,6 +135,7 @@ public partial class HomeScene : MonoBehaviour{
     void button_1_Click() // 选择1 ： Lee是谁？
     {
         m_mask_0.visible = false;
+        ChangeAvatar(1);
         m_i = 7; // "Comp，Lee是谁，为何会给我发邮件？邮件内容是什么？"
         isActive = true;
     }
@@ -130,9 +145,11 @@ public partial class HomeScene : MonoBehaviour{
         m_i = 12;
         isActive = true;
     }
-    void button_1_1_1_Click(){
+    void button_1_1_1_Click(){ // 看看吧
         m_dialog.text = "";
         m_mask_1_1.visible = false;
+        m_mail_sender.text = mail_strs[0];
+        m_mail_content.text= mail_strs[1];
         m_mail.visible = true;
     }
     void button_1_1_2_Click()
@@ -162,6 +179,7 @@ public partial class HomeScene : MonoBehaviour{
     {
         m_mask_2_1_1.visible = false;
         m_dialog.text = "";
+        m_mail_content.text = mail_strs[2];
         m_mail.visible = true;
         m_i = 25;
     }
@@ -180,26 +198,44 @@ public partial class HomeScene : MonoBehaviour{
     {
         //TODO:触发隐藏剧情
     }
-    void consoleMask_Click(){
-        if ((m_i>=31) && (m_i<35)){ 
-            ControlDialogue();
-        }
-        else if(m_i == 35){
-            m_console_mask.visible = false;
-            m_i = 36;
-            isActive = true;
-        }
-    }
     void clueOKButton_Click(){
         m_clue.visible = false;
         if(m_i == 35){
             m_i = 36;
+            ChangeAvatar(1);
+            m_console.visible = false;
             isActive = true;
         }
         else if(m_i == 46){
             m_i = 47;
             isActive = true;
         }
+    }
+    void clueCheckButton_Click(){
+        m_clue_detail.visible = true;
+        m_clue_detail_content.text = clue_strs[0];
+    }
+    void clueDetailCloseButton_Click(){
+        m_clue_detail.visible = false;
+    }
+    void graceButton_Click(){
+        PlayerPrefs.SetInt("m_i", 0);
+        SceneManager.LoadScene("GraceScene");
+    }
+    void grandpaButton_Click(){
+        PlayerPrefs.SetInt("m_i", 0);
+        SceneManager.LoadScene("GrandpaScene");
+    }
+    void shelf_Click(){
+        m_clue_simple_content.text = clue_strs[1];
+        m_clue_simple.visible = true;
+    }
+    void clueSimpleCloseButton_Click(){
+        m_clue_simple.visible = false;
+    }
+    void picture_Click(){
+        m_clue_simple_content.text = clue_strs[2];
+        m_clue_simple.visible = true;
     }
 }
 }

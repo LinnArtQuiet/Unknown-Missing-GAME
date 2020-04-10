@@ -8,6 +8,8 @@
     <component id="en0o4" name="CommonButton.xml" path="/"/>
     <image id="en0o5" name="点击button(大).png" path="/"/>
     <image id="en0o6" name="点击button（小）.png" path="/"/>
+    <component id="o7aq9" name="NextButton.xml" path="/"/>
+    <sound id="o7aqa" name="Click.wav" path="/"/>
   </resources>
-  <publish name=""/>
+  <publish name="DrivePackage"/>
 </packageDescription>

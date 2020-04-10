@@ -7,6 +7,7 @@
     <image id="v6vy3" name="button-start-up.png" path="/"/>
     <image id="v6vy5" name="logo in beginning.png" path="/"/>
     <component id="g1og1" name="StartButton.xml" path="/"/>
+    <image id="ivev6" name="初始画面_背景.png" path="/"/>
   </resources>
   <publish name="" path="E:\workspace\Unity\UnknownMissingGame\Assets\Resources\MainPackage" packageCount="2"/>
 </packageDescription>

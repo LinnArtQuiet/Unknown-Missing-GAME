@@ -6,14 +6,10 @@
     <image id="en0o2" name="场景2-桌子.png" path="/"/>
     <image id="en0o3" name="场景2-椅子.png" path="/"/>
     <image id="en0o4" name="场景2-衣柜.png" path="/"/>
-    <image id="en0o5" name="场景2-爷爷的房间-全览图.png" path="/"/>
     <image id="en0o6" name="场景2-书柜.png" path="/"/>
     <image id="en0o7" name="场景2-书法.png" path="/"/>
-    <image id="en0o8" name="场景2-墙纸.png" path="/"/>
     <image id="en0o9" name="场景2-盆栽.png" path="/"/>
-    <image id="en0oa" name="场景2-黑背景.png" path="/"/>
-    <image id="en0ob" name="场景2-地面.png" path="/"/>
-    <component id="en0oc" name="Avatar.xml" path="/"/>
+    <component id="en0oc" name="AvatarGrandpa.xml" path="/"/>
     <image id="en0od" name="comp.png" path="/"/>
     <component id="en0oe" name="Dialog.xml" path="/"/>
     <component id="en0of" name="NextButton.xml" path="/"/>
@@ -23,6 +19,12 @@
     <component id="en0oj" name="CommonButton.xml" path="/"/>
     <image id="en0ok" name="点击button(大).png" path="/"/>
     <image id="en0ol" name="点击button（小）.png" path="/"/>
+    <image id="jgenm" name="场景2-地面.png" path="/"/>
+    <image id="jgenn" name="场景2-黑背景.png" path="/"/>
+    <image id="jgeno" name="场景2-墙纸.png" path="/"/>
+    <image id="jgenp" name="场景2-爷爷的房间-全览图.png" path="/"/>
+    <component id="o7aqq" name="AvatarTaoxi.xml" path="/"/>
+    <image id="o7aqr" name="主人公_陶夕头像.png" path="/"/>
   </resources>
-  <publish name=""/>
+  <publish name="GrandpaPackage"/>
 </packageDescription>

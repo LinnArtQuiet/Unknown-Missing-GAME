@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,450" overflow="scroll" scroll="horizontal">
+  <displayList>
+    <image id="n0_jgen" name="n0" src="jgen7" fileName="场景3_墙纸.png" xy="0,0" size="2000,450"/>
+    <image id="n1_jgen" name="n1" src="jgen5" fileName="场景3_世界地图.png" xy="206,66" size="316,224"/>
+    <image id="n2_jgen" name="n2" src="jgen9" fileName="场景3_科技大脑.png" xy="634,82" size="190,178"/>
+    <image id="n3_jgen" name="n3" src="jgen8" fileName="场景3_科技球.png" xy="990,70" size="367,184"/>
+    <image id="n4_jgen" name="n4" src="jgen6" fileName="场景3_实验桌.png" xy="1384,92" size="486,315"/>
+    <image id="n5_jgen" name="n5" src="jgena" fileName="场景3_地面.png" xy="0,430" size="2000,20"/>
+  </displayList>
+</component>

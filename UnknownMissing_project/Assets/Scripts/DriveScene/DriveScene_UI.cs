@@ -16,9 +16,16 @@ public partial class DriveScene : MonoBehaviour{
         m_dialog.text = "";
         m_nextButton = view.GetChild("NextButton").asButton; 
         m_nextButton.onClick.Add(nextButton_Click);
-        m_nextButton.visible = false;
         m_destinButton = view.GetChild("DestinButton").asButton;
         m_destinButton.onClick.Add(destinButton_Click);
+        if(m_i == 0){ // 证明从HomeScene第一章跳转过来的
+            m_nextButton.visible = false;
+        }
+        else if(m_i == 14){ // 证明从GrandpaScene第二章跳转过来的
+            m_nextButton.visible = true;
+            m_destinButton.visible=false;
+            isActive = true;
+        }
     }
     void nextButton_Click(){
         if((m_i>=0) && (m_i<6)){
@@ -33,6 +40,13 @@ public partial class DriveScene : MonoBehaviour{
         }
         else if(m_i == 13){
             //TODO:剧情跳转第三章
+        }
+        else if((m_i>=14) && (m_i<16)){
+            ControlDialogue();
+        }
+        else if(m_i == 16){
+            PlayerPrefs.SetInt("m_i", 50); // 中转章
+            SceneManager.LoadScene("HomeScene");
         }
     }
     void destinButton_Click(){

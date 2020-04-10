@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="145,120">
+  <displayList>
+    <graph id="n1_en0o" name="n1" xy="0,0" size="145,120" type="rect" fillColor="#ff000000"/>
+    <image id="n2_en0o" name="n2" src="en0og" fileName="角色3_Grandpa头像.png" xy="30,20" size="85,80"/>
+  </displayList>
+</component>
