@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class SubtitleScene : MonoBehaviour
 {
-    string secondStr = "人工智能与人类生活的结合日趋紧密，无人驾驶系统早已步入成熟期，可穿戴模式渗透生活琐事，人类的衣食住行，医教文娱早已迈入机械化、智能化阶段。医疗的人工智能助理盛极一时，越来越多的人，将个人健康交由AI管理。";
+    public AudioSource music;
+    public AudioClip bgm_wav;
+    string secondStr = "人工智能与人类生活的结合日趋紧密，\n无人驾驶系统早已步入成熟期，\n可穿戴模式渗透生活琐事，人类的衣食住行，\n医教文娱早已迈入机械化、智能化阶段。\n医疗的人工智能助理盛极一时，\n越来越多的人，将个人健康交由AI管理。";
     bool isFirstStr = true; // 一共就两个字符串
     bool isActive = false; // 是否正在打字
     float charsPerSecond = 0.2f;//打字时间间隔
@@ -16,10 +18,15 @@ public class SubtitleScene : MonoBehaviour
     GLabel m_label;
     void Start()
     {
+        music = gameObject.AddComponent<AudioSource>();
+        bgm_wav = Resources.Load<AudioClip>("music/Narrator");
+        music.clip = bgm_wav;
+        music.loop = true;
+        music.Play();
         UIPanel panel = gameObject.GetComponent<UIPanel>();
         GComponent view = panel.ui;
         m_label = view.GetChild("Label").asLabel;
-        nowStr = "欢迎来到2050年，请置换佩戴隐形式智能穿戴设施，获得你的私人助理Comp"; // 初始化第一个字符串
+        nowStr = "欢迎来到2050年，\n请置换佩戴隐形式智能穿戴设施，\n获得你的私人助理Comp"; // 初始化第一个字符串
         m_label.text = "";
         GButton background = view.GetChild("Background").asButton;
         m_label.onClick.Add(OnClick);
@@ -39,6 +46,7 @@ public class SubtitleScene : MonoBehaviour
         }
         else
         {
+            PlayerPrefs.SetInt("m_i", 0);
             SceneManager.LoadScene("HomeScene"); // 更换场景
         }
     }

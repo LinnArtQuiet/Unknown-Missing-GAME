@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="317,193" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_jhew" name="n0" src="g1oge" fileName="场景1-钢琴.png" xy="0,0" size="317,193">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_jhew" name="n1" src="g1oge" fileName="场景1-钢琴.png" xy="0,0" size="317,193">
+      <gearDisplay controller="button" pages="1"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_jhew" name="n2" src="g1oge" fileName="场景1-钢琴.png" xy="0,0" size="317,193">
+      <gearDisplay controller="button" pages="2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_jhew" name="n3" src="g1oge" fileName="场景1-钢琴.png" xy="0,0" size="317,193">
+      <gearDisplay controller="button" pages="3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+  <Button sound="ui://hsptubuojhew1x"/>
+</component>

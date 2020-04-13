@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600" bgColorEnabled="true" bgColor="#000000">
+  <displayList>
+    <graph id="n3_o7aq" name="n3" xy="0,0" size="800,600" type="rect" fillColor="#ff000000"/>
+    <component id="n8_o7aq" name="AvatarTaoxi" src="o7aqf" fileName="AvatarTaoxi.xml" xy="0,0"/>
+    <component id="n14_o1y5" name="AvatarGuard" src="o1y5n" fileName="AvatarGuard.xml" xy="0,0"/>
+    <component id="n0_jgen" name="n0" src="jgenc" fileName="WallPaper.xml" xy="0,120"/>
+    <component id="n1_jgen" name="Dialog" src="jgend" fileName="Dialog.xml" xy="145,0"/>
+    <component id="n2_jgen" name="NextButton" src="jgene" fileName="NextButton.xml" xy="733,0"/>
+    <component id="n9_o7aq" name="n9" src="o7aqh" fileName="Mask.xml" xy="0,0" group="n13_o7aq"/>
+    <component id="n10_o7aq" name="n10" src="o7aqi" fileName="CollectButton.xml" xy="494,173" size="300,70" group="n13_o7aq"/>
+    <component id="n11_o7aq" name="n11" src="o7aqk" fileName="MailReadButton.xml" xy="492,301" size="300,70" group="n13_o7aq"/>
+    <component id="n12_o7aq" name="DriveButton" src="o7aql" fileName="DriveButton.xml" xy="488,416" size="300,70" group="n13_o7aq"/>
+    <group id="n13_o7aq" name="Console" xy="0,0" size="800,600" visible="false" advanced="true"/>
+    <image id="n15_o1y5" name="n15" src="jgen3" fileName="场景3前置门禁_底色.png" xy="0,120" size="800,450" group="n18_o1y5"/>
+    <image id="n16_o1y5" name="n16" src="jgen1" fileName="场景3前置门禁_人脸识别.png" xy="162,253" size="162,153" group="n18_o1y5"/>
+    <image id="n17_o1y5" name="n17" src="jgen0" fileName="场景3前置门禁_指纹识别.png" xy="485,238" size="156,172" group="n18_o1y5"/>
+    <group id="n18_o1y5" name="Entrance" xy="0,120" size="800,450" advanced="true"/>
+  </displayList>
+</component>

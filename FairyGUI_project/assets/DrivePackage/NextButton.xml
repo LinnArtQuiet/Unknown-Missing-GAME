@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="67,120" extention="Button" initName="NextButton">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <text id="n3_g1og" name="title" xy="3,81" size="61,30" fontSize="12" color="#ffffff" align="center" vAlign="middle" autoSize="none" singleLine="true" text="点击继续">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <graph id="n4_o7aq" name="n4" xy="17,46" size="33,28" type="regular_polygon" sides="3" startAngle="90"/>
+  </displayList>
+  <Button sound="ui://8ofv37w2o7aqa"/>
+</component>

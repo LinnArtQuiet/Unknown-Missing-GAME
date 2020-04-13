@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="800,600">
   <displayList>
-    <image id="n0_g1og" name="n0" src="v6vy4" fileName="beginning background.png" xy="0,0" size="800,600"/>
+    <image id="n4_ivev" name="n4" src="ivev6" fileName="初始画面_背景.png" xy="0,0" size="800,600"/>
     <image id="n1_g1og" name="n1" src="v6vy5" fileName="logo in beginning.png" xy="155,89" size="489,259"/>
     <component id="n3_g1og" name="StartButton" src="g1og1" fileName="StartButton.xml" xy="370,481"/>
   </displayList>

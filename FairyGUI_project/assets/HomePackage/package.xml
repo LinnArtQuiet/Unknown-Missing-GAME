@@ -20,7 +20,7 @@
     <component id="g1og6" name="CollectButton.xml" path="/"/>
     <image id="rw0pt" name="comp.png" path="/"/>
     <image id="rw0pv" name="角色1-comp.png" path="/"/>
-    <component id="91frw" name="Wallpaper.xml" path="/"/>
+    <component id="91frw" name="WallPaper.xml" path="/"/>
     <component id="imxqx" name="Mail.xml" path="/"/>
     <image id="imxqy" name="系统关闭button.png" path="/"/>
     <component id="imxqz" name="CloseButton.xml" path="/"/>
@@ -31,10 +31,28 @@
     <component id="en0o16" name="MailReadButton.xml" path="/"/>
     <image id="en0o17" name="角色1-comp_4.png" path="/"/>
     <component id="en0o19" name="HomeScene.xml" path="/" exported="true"/>
-    <component id="en0o1c" name="Avatar.xml" path="/"/>
-    <component id="en0o1d" name="Guild_Dialog.xml" path="/"/>
+    <component id="en0o1c" name="AvatarComp.xml" path="/"/>
+    <component id="en0o1d" name="GuildDialog.xml" path="/"/>
     <component id="en0o1e" name="Clue.xml" path="/"/>
     <component id="en0o1f" name="ClueLabel.xml" path="/"/>
+    <image id="o7aq1g" name="主人公_陶夕头像.png" path="/"/>
+    <component id="o7aq1h" name="AvatarTaoxi.xml" path="/"/>
+    <sound id="o7aq1i" name="Click.wav" path="/"/>
+    <component id="o7aq1j" name="MailSender.xml" path="/"/>
+    <component id="o7aq1k" name="MailContent.xml" path="/"/>
+    <image id="o7aq1l" name="comp_4.png" path="/"/>
+    <component id="o7aq1n" name="ClueContent.xml" path="/"/>
+    <component id="o7aq1o" name="ClueDetailContent.xml" path="/"/>
+    <component id="o7aq1q" name="Shelf.xml" path="/"/>
+    <component id="rrul1s" name="ChineseZither.xml" path="/"/>
+    <sound id="rrul1t" name="ChineseZither.mp3" path="/"/>
+    <component id="jhew1u" name="Clock.xml" path="/"/>
+    <sound id="jhew1v" name="Clock.mp3" path="/"/>
+    <component id="jhew1w" name="Piano.xml" path="/"/>
+    <sound id="jhew1x" name="Piano.mp3" path="/"/>
+    <component id="jhew1y" name="Picture.xml" path="/"/>
+    <component id="jcvc1z" name="Desk.xml" path="/"/>
+    <image id="jcvc21" name="邮件系统_进入button.png" path="/"/>
   </resources>
   <publish name="HomePackage" path="E:\workspace\Unity\UnknownMissingGame\Assets\Resources\HomePackage" packageCount="2"/>
 </packageDescription>
