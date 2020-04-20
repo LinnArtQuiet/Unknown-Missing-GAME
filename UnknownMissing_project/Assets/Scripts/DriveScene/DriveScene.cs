@@ -13,6 +13,8 @@ public partial class DriveScene : MonoBehaviour
     {
         m_i = PlayerPrefs.GetInt("m_i");
         initUI();
+        Debug.Log(m_i);
+        isActive = true;
         Debug.Log("start!");
     }
     void Update()

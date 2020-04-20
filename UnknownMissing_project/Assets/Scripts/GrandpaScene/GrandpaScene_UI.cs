@@ -12,9 +12,10 @@ public partial class GrandpaScene : MonoBehaviour{
     public void initUI(){
         UIPanel panel = gameObject.GetComponent<UIPanel>();
         GComponent view = panel.ui; // 整个UI的集合
-        m_avatar = new GComponent[2];
+        m_avatar = new GComponent[3];
         m_avatar[0] = view.GetChild("AvatarGrandpa").asCom;
         m_avatar[1] = view.GetChild("AvatarTaoxi").asCom;
+        m_avatar[2] = view.GetChild("AvatarComp").asCom;
         // 上面的对话框
         m_dialog = view.GetChild("Dialog").asLabel; 
         m_dialog.text = "";
@@ -47,28 +48,35 @@ public partial class GrandpaScene : MonoBehaviour{
             m_mask_1.visible = true;
         }
         else if((m_i>=2) && (m_i<5)){
+            m_i = 5;
             m_dialog.text = strs[m_i];
             m_mask_2.visible = true;
         }
         else if((m_i>=5) && (m_i<8)){
-            m_i = 8;
+            m_i = 9;
             isActive = true;
         }
-        else if((m_i>=8) && (m_i<27)){
-            if(m_i%2 == 0) ChangeAvatar(1);
-            else ChangeAvatar(0);
+        else if((m_i>=8) && (m_i<28)){
+            ChangeAvatar(m_i%2);
+            if(m_i == 26) ChangeAvatar(1);
+            if(m_i == 27) ChangeAvatar(2);
             ControlDialogue();
         }
-        else if(m_i == 27){
-            PlayerPrefs.SetInt("m_i", 14);
-            SceneManager.LoadScene("DriveScene");
+        else if(m_i == 28){
+            if(fristTurnTo == 2){ // 跳到中转章，然后跳到Grace那里
+                PlayerPrefs.SetInt("m_i", 14);
+                SceneManager.LoadScene("DriveScene");
+            }
+            else if(fristTurnTo == 3){ // 跳到最后
+                PlayerPrefs.SetInt("m_i", 17);
+                SceneManager.LoadScene("DriveScene");
+            }
         }
     }
     void button_1_a_Click(){
         m_mask_1.visible = false;
         m_i = 2;
         isActive = true;
-        Debug.Log(strs[m_i]);
     }
     void button_1_b_Click(){
         m_mask_1.visible = false;
@@ -82,17 +90,17 @@ public partial class GrandpaScene : MonoBehaviour{
     }
     void button_2_a_Click(){
         m_mask_2.visible = false;
-        m_i = 5;
+        m_i = 6;
         isActive = true;
     }
     void button_2_b_Click(){
         m_mask_2.visible = false;
-        m_i = 6;
+        m_i = 7;
         isActive = true;
     }
     void button_2_c_Click(){
         m_mask_2.visible = false;
-        m_i = 7;
+        m_i = 8;
         isActive = true;
     }
 }

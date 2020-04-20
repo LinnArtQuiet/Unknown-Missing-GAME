@@ -6,29 +6,35 @@ using FairyGUI;
 namespace app{
 public partial class HomeScene : MonoBehaviour
 {
+    private AudioSource sound;
+    private AudioClip click_wav;
+    private AudioSource music;
+    private AudioClip bgm_wav;
+    private AudioClip piano_wav;
+    private AudioClip ChineseZither_wav;
+
     int m_i = 50; // 控制流程的标志，一般就是控制游戏进程的，非常重要
+
     float timer = 0.0f; // 蹦字用的计时器
     bool isActive = false; // 是否处在打字过程中
     int currentPos = 0; // 打字的位置
-
-    public AudioSource sound;
-    public AudioClip click_wav;
-    public AudioSource music;
-    public AudioClip bgm_wav;
 
     void Start() // 主要用来完成初始化和控件获得
     {
         sound = gameObject.AddComponent<AudioSource>();
         click_wav = Resources.Load<AudioClip>("music/Click");
+        piano_wav = Resources.Load<AudioClip>("music/Piano");
+        ChineseZither_wav = Resources.Load<AudioClip>("music/ChineseZither");
         music = gameObject.AddComponent<AudioSource>();
         bgm_wav = Resources.Load<AudioClip>("music/HomeScene");
         music.clip = bgm_wav;
         music.loop = true;
         music.Play();
-        initUI(); // 在HomeScene_UI.cs文件中
+        
         m_i = PlayerPrefs.GetInt("m_i");
+
+        initUI(); // 在HomeScene_UI.cs文件中
         isActive = true; // 开始动画
-        Debug.Log("start! 第一章开始！");
         Debug.Log("start! 第一章开始！");
     }
     void Update()
@@ -42,12 +48,7 @@ public partial class HomeScene : MonoBehaviour
                 currentPos++; // 字符指针前进
                 m_dialog.text = "";
                 m_guild_dialog.text = "";
-                if ((m_i>=31) && (m_i<35)) // 判断哪一个对话框填充
-                {
-                    m_guild_dialog.text = strs[m_i].Substring(0, currentPos);
-                }
-                else if ((m_i>=42) && (m_i<46)) // 判断哪一个对话框填充
-                {
+                if(m_guild.visible == true){
                     m_guild_dialog.text = strs[m_i].Substring(0, currentPos);
                 }
                 else
@@ -78,12 +79,7 @@ public partial class HomeScene : MonoBehaviour
         isActive = false; // 停止并初始化
         timer = 0;
         currentPos = 0;
-        if ((m_i>=31) && (m_i<35)) // 判断哪一个对话框填充
-        {
-            m_guild_dialog.text = strs[m_i];
-        }
-        else if ((m_i>=42) && (m_i<46)) // 判断哪一个对话框填充
-        {
+        if(m_guild.visible == true){
             m_guild_dialog.text = strs[m_i];
         }
         else

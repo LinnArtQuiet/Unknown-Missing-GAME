@@ -9,7 +9,9 @@ public partial class GraceScene : MonoBehaviour
     public AudioSource music;
     public AudioClip bgm_wav;
 
+    int fristTurnTo;
     int m_i = 0;
+
     float timer = 0.0f; 
     bool isActive = false;
     int currentPos = 0; 
@@ -21,7 +23,10 @@ public partial class GraceScene : MonoBehaviour
         music.loop = true;
         music.Play();
 
+        fristTurnTo = PlayerPrefs.GetInt("fristTurnTo");
         m_i = PlayerPrefs.GetInt("m_i");
+        Debug.Log(fristTurnTo);
+        Debug.Log(m_i);
         initUI();
         isActive = true;
         Debug.Log("start!");
@@ -62,6 +67,12 @@ public partial class GraceScene : MonoBehaviour
         currentPos = 0;
         m_dialog.text = strs[m_i];
         m_i++; 
+    }
+    void ChangeAvatar(int i){
+        m_avatar[0].visible = false;
+        m_avatar[1].visible = false;
+        m_avatar[2].visible = false;
+        m_avatar[i].visible = true;
     }
 }
 }

@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using FairyGUI;
 using UnityEngine.SceneManagement;
-
-public class SubtitleScene : MonoBehaviour
+namespace app{
+public partial class SubtitleScene : MonoBehaviour
 {
     public AudioSource music;
     public AudioClip bgm_wav;
-    string secondStr = "人工智能与人类生活的结合日趋紧密，\n无人驾驶系统早已步入成熟期，\n可穿戴模式渗透生活琐事，人类的衣食住行，\n医教文娱早已迈入机械化、智能化阶段。\n医疗的人工智能助理盛极一时，\n越来越多的人，将个人健康交由AI管理。";
-    bool isFirstStr = true; // 一共就两个字符串
-    bool isActive = false; // 是否正在打字
-    float charsPerSecond = 0.2f;//打字时间间隔
+
+    int m_i = 0;
+
+    GLabel m_label;
+   
+   bool isActive = false; // 是否正在打字
+    float charsPerSecond = 0.1f;//打字时间间隔
     float timer;//计时器
     int currentPos = 0;//当前打字位置
-    string nowStr; // 表示现在打字特效的字符串
-    GLabel m_label;
+
     void Start()
     {
         music = gameObject.AddComponent<AudioSource>();
@@ -23,10 +25,12 @@ public class SubtitleScene : MonoBehaviour
         music.clip = bgm_wav;
         music.loop = true;
         music.Play();
+
+        m_i = PlayerPrefs.GetInt("m_i");
+
         UIPanel panel = gameObject.GetComponent<UIPanel>();
         GComponent view = panel.ui;
         m_label = view.GetChild("Label").asLabel;
-        nowStr = "欢迎来到2050年，\n请置换佩戴隐形式智能穿戴设施，\n获得你的私人助理Comp"; // 初始化第一个字符串
         m_label.text = "";
         GButton background = view.GetChild("Background").asButton;
         m_label.onClick.Add(OnClick);
@@ -35,18 +39,32 @@ public class SubtitleScene : MonoBehaviour
     }
     void OnClick()
     {
-        if (isActive){
-            return; // 如果正在打字，则没有点击事件
-        } 
-        if (isFirstStr)
-        {
-            isFirstStr = false;
-            nowStr = secondStr;
-            isActive = true; // 激活打字效果
+        if((m_i>=0) && (m_i<2)){ // 普通过程切换
+            ControlDialogue();
         }
-        else
-        {
+        else if(m_i == 2){
             PlayerPrefs.SetInt("m_i", 0);
+            SceneManager.LoadScene("HomeScene"); // 更换场景
+        }
+        else if((m_i>=3) && (m_i<5)){ // 最终场景切换
+            ControlDialogue();
+        }
+        else if(m_i == 5){
+            PlayerPrefs.SetInt("m_i", 0);
+            SceneManager.LoadScene("OutsideScene"); // 更换场景，最终
+        }
+        else if((m_i>=6) && (m_i<7)){ // DLC场景切换
+            ControlDialogue();
+        }
+        else if(m_i == 7){ // 切换DLC
+            PlayerPrefs.SetInt("m_i", 0);
+            SceneManager.LoadScene("DLCScene"); // 更换场景
+        }
+        else if((m_i>=8) && (m_i<9)){ // 支线的情况
+            ControlDialogue();
+        }
+        else if(m_i == 9){
+            PlayerPrefs.SetInt("m_i", 67);
             SceneManager.LoadScene("HomeScene"); // 更换场景
         }
     }
@@ -59,17 +77,34 @@ public class SubtitleScene : MonoBehaviour
             {//判断计时器时间是否到达
                 timer = 0;
                 currentPos++;
-                m_label.text = nowStr.Substring(0, currentPos);//刷新文本显示内容
-                if (currentPos >= nowStr.Length)
+                m_label.text = strs[m_i].Substring(0, currentPos);//刷新文本显示内容
+                if (currentPos >= strs[m_i].Length)
                 {
-                    isActive = false;
-                    timer = 0;
-                    currentPos = 0;
-                    m_label.text = nowStr;
+                    OnFinish();
                 }
             }
 
         }
     }
-
+    
+    void ControlDialogue(){ 
+        if (isActive) 
+        {
+            OnFinish();
+        }
+        else 
+        {
+            m_label.text = "";
+            isActive = true;
+        }
+    }
+    void OnFinish()
+    {
+        isActive = false; 
+        timer = 0;
+        currentPos = 0;
+        m_label.text = strs[m_i];
+        m_i++; 
+    }
+}
 }

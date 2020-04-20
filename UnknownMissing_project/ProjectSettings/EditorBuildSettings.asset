@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GraceScene.unity
     guid: 4392e9496c16a1145aed99a191fb497a
+  - enabled: 1
+    path: Assets/Scenes/OutsideScene.unity
+    guid: 53d8c7c79196bbc47b4706e299084e5f
+  - enabled: 1
+    path: Assets/Scenes/DLCScene.unity
+    guid: a7a42598dc5b5674692ab8e290dd65e2
   m_configObjects: {}

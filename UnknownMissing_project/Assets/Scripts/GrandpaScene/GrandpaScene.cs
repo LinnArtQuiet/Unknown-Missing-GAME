@@ -8,7 +8,9 @@ public partial class GrandpaScene : MonoBehaviour
     public AudioSource music;
     public AudioClip bgm_wav;
     
+    int fristTurnTo;
     int m_i = 0;
+    
     float timer = 0.0f; 
     bool isActive = false;
     int currentPos = 0; 
@@ -19,6 +21,10 @@ public partial class GrandpaScene : MonoBehaviour
         music.clip = bgm_wav;
         music.loop = true;
         music.Play();
+
+        fristTurnTo = PlayerPrefs.GetInt("fristTurnTo");
+        m_i = PlayerPrefs.GetInt("m_i");
+        
         initUI();
         isActive = true;
         Debug.Log("start! 第二章开始！");
@@ -63,6 +69,7 @@ public partial class GrandpaScene : MonoBehaviour
     void ChangeAvatar(int i){
         m_avatar[0].visible = false;
         m_avatar[1].visible = false;
+        m_avatar[2].visible = false;
         m_avatar[i].visible = true;
     }
 }
